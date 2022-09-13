@@ -7,13 +7,18 @@
 html {
   scroll-behavior: smooth;
 }
+button:hover{
+    transform: scale(1.1,1.1);
+}
+.container,.skills,.projects,.certificate{
+    padding: 50px 0 0 3em;
+}
+    
 
 .resume {
   margin: 7em auto;
   max-width: 900px;
-  /* height: 100vh; */
   border-radius: 13px;
-  /* border: 1px solid black; */
   box-shadow: 0 0 30px 0px rgb(66, 63, 63);
   padding-bottom: 3em;
 }
@@ -23,18 +28,15 @@ html {
   border-radius: 15px 15px 0 0;
   font-family: poppins;
   display: flex;
-  gap: 2em;
-  position: relative;
-  padding: 3em;
+  gap: 4em;
+  padding: 3em 2em 2em 3em;
 }
 .profile {
   max-width: 200px;
-  height: 190px;
+  height: 200px;
   overflow: hidden;
   padding: 5px;
   background-color: black;
-  position: absolute;
-  bottom: -15px;
   border-radius: 80%;
 }
 .profile img {
@@ -43,14 +45,14 @@ html {
   border-radius: 50%;
 }
 .nm-ctn {
-  margin: 10px auto 0;
+  margin: 10px 0;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
 }
 .nm-ctn p {
-  font-weight: 500;
+  font-weight: 500;  
 }
 .nm-ctn button {
   padding: 10px 19px;
@@ -58,17 +60,30 @@ html {
   border: none;
   margin: 10px 5px 0 0;
   font-weight: 600;
+  cursor: pointer;
+  transition: transform 500ms ease;
 }
+
 .bt2 {
   background: #37bc9b;
   color: white;
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 0 4px;
+    transform: scale(1,1);
+    transition: transform 500ms ease;
+}
+.social-icons a:hover{
+    transform: scale(1.1,1.1);
 }
 
 .container {
   /* height: 1000px; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 50px 0 0 3em;
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -86,9 +101,7 @@ html {
   gap: 50px;
 }
 
-.skills {
-  padding: 50px 0 0 3em;
-}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -133,6 +146,34 @@ html {
   background: linear-gradient(to right, #4989dc 80%, #eaecef 20%);
 }
 
-.contact {
-  padding: 50px 0 0 3em;
+
+.cards-container{
+    max-width: 20em;
+    margin: 10px 2em 0 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.card{
+    color: black;
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 20%);
+    padding: 50px 10px 30px 20px;
+    border-radius: 10px;
+    width: 250px;
+    position: relative;
+}
+.card p{
+    margin-top: 5px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+
+.cert-cont{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px ;
+    gap: 10px;
+    font-size: large;
 }
